@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.massive_mobile_merge11.databinding.FragmentProfilBinding
+import com.google.firebase.auth.FirebaseAuth
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,6 +25,7 @@ class ProfilFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
     private var _binding: FragmentProfilBinding? = null
+    val firebaseAuth = FirebaseAuth.getInstance()
     private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,6 +46,12 @@ class ProfilFragment : Fragment() {
 
         binding.btnEdit.setOnClickListener{
             val intent = Intent(activity, EditProfilActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.btnLogout.setOnClickListener{
+            firebaseAuth.signOut()
+            val intent = Intent(activity, LoginActivity::class.java)
             startActivity(intent)
         }
         return view
