@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Glow Healthy</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="topbg">topbg</string>
+    <string name="ini_home">Ini Home</string>
+    <string name="unggah_komentar">Unggah Komentar</string>
+    <string name="profil">PROFIL</string>
+    <string name="edit_profil">Edit Profil</string>
+    <string name="username">Username</string>
+    <string name="nama_pasien">Nama Pasien</string>
+    <string name="nik">NIK</string>
+    <string name="jenis_pasien">Jenis Pasien</string>
+</resources>
